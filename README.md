@@ -1,4 +1,4 @@
-# ESP32-42e-Paper-Weather-Display-
+# ESP32-42e-Paper-Weather-Display-433MHz
 
 This fork is based on David Bird's excellent e-Paper weather display.  I have added code to receive Temperature & Humidity readings from up to 3x F007TH Thermometer / Hygrometers.  The 433MHz Receive & Decode is based on the work by:
  
@@ -28,7 +28,7 @@ Additional Features:
   use the same unit at home and work and it would read correctly.
 
 
-In the sketch, I've connected the DATA from the Rx to pin 14.  This is the YELLOW wire in the photo below.  I suggest you use a Superhetrodyne type receiver such as a RXB6 module - they work much better than the others.  Although some references say the RXB6 needs 5v, it works happily on 3.3v too.
+In the sketch, I've connected the DATA from the Rx to IO D14.  This is the YELLOW wire in the photo below.  I suggest you use a Superhetrodyne type receiver such as a RXB6 module - they work much better than the others.  Although some references say the RXB6 needs 5v, it works happily on 3.3v too.
 ![alt text](https://github.com/SimonRafferty/ESP32-42e-Paper-Weather-Display-/blob/master/Weather%20Rx.jpg)
 
 The WHITE wire is the Antenna.  I've used a 1/4 wave, 23cm length of wire for this which achieves a range of over 100m

@@ -1,6 +1,31 @@
 # ESP32-42e-Paper-Weather-Display-
-A revised weather display based on a 7.5" version for the 4.2" display
-ESP32-e-Paper-Weather-DisplayAn ESP32 and a 2.9" ePaper Display reads Weather Underground and displays the weather
+
+This fork is based on David Bird's excellent e-Paper weather display.  I have added code to receive Temperature & Humidity readings from up to 3x F007TH Thermometer / Hygrometers.  The 433MHz Receive & Decode is based on the work by:
+ 
+ Rob Ward (whose Manchester Encoding reading by delay rather than interrupt
+ is the basis of this code)
+ https://github.com/robwlakes/ArduinoWeatherOS
+ 
+ The work of 3zero8 capturing and analysing the F007th data
+ http://forum.arduino.cc/index.php?topic=214436.0
+ 
+ The work of Volgy capturing and analysing the F007th data
+ https://github.com/volgy/gr-ambient
+ 
+ Marco Schwartz for showing how to send sensor data to websites
+ http://www.openhomeautomation.net/
+
+Additional Features:
+* 433MHz Temperature / Humidity receive.  Channels 1, 2 & 3 (Set by DIP switches on Tx) are displayed.
+  These are labeled: Indoor (Ch 1), Outdoor (Ch 2) and Workshop (Ch 3)
+  If no signal is received on Ch2, the Temp & Humidity from Open Weather is displayed in it's place.
+  
+* SSID1 & SSID2 are implemented in owncredentials2.h to point to a main and backup WiFi source.  I've also added CITY1 & CITY2 
+  in the same way.  CITY1 is used if the unit establishes a connection to SSID1 and CITY2 for SSID2.  This was so I could 
+  use the same unit at home and work and it would read correctly.
+
+
+A weather display for the 4.2" WaveShare display
 
 OPEN WEATHER MAP VERSION
 

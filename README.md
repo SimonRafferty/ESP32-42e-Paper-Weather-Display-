@@ -15,6 +15,9 @@ This fork is based on David Bird's excellent e-Paper weather display.  I have ad
  Marco Schwartz for showing how to send sensor data to websites
  http://www.openhomeautomation.net/
 
+
+![alt text](https://github.com/SimonRafferty/ESP32-42e-Paper-Weather-Display-/blob/master/Weather%20433%20Display.jpg)
+
 Additional Features:
 * 433MHz Temperature / Humidity receive.  Channels 1, 2 & 3 (Set by DIP switches on Tx) are displayed.
   These are labeled: Indoor (Ch 1), Outdoor (Ch 2) and Workshop (Ch 3)
@@ -24,6 +27,11 @@ Additional Features:
   in the same way.  CITY1 is used if the unit establishes a connection to SSID1 and CITY2 for SSID2.  This was so I could 
   use the same unit at home and work and it would read correctly.
 
+
+In the sketch, I've connected the DATA from the Rx to pin 14.  This is the YELLOW wire in the photo below.  I suggest you use a Superhetrodyne type receiver such as a RXB6 module - they work much better than the others.  Although some references say the RXB6 needs 5v, it works happily on 3.3v too.
+![alt text](https://github.com/SimonRafferty/ESP32-42e-Paper-Weather-Display-/blob/master/Weather%20Rx.jpg)
+
+The WHITE wire is the Antenna.  I've used a 1/4 wave, 23cm length of wire for this which achieves a range of over 100m
 
 A weather display for the 4.2" WaveShare display
 

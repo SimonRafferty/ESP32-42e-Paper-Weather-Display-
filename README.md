@@ -1,6 +1,9 @@
 # ESP32-42e-Paper-Weather-Display-433MHz
 
-This fork is based on David Bird's excellent e-Paper weather display.  I have added code to receive Temperature & Humidity readings from up to 3x F007TH Thermometer / Hygrometers.  The 433MHz Receive & Decode is based on the work by:
+This fork is based on David Bird's excellent e-Paper weather display.  I have added code to receive Temperature & Humidity readings from up to 3x F007TH Thermometer / Hygrometers.
+https://www.amazon.co.uk/dp/B07CQF4712/ref=pe_3187911_185740111_TE_item
+
+The 433MHz Receive & Decode is based on the work by:
  
  Rob Ward (whose Manchester Encoding reading by delay rather than interrupt
  is the basis of this code)

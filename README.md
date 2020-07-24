@@ -1,4 +1,7 @@
-# ESP32-42e-Paper-Weather-Display-433MHz
+# Inkplate6 e-Paper-Weather-Display-433MHz
+
+This branch is to run on the impressive Inkplate6 e-Paper Display with a built in ESP32.  It's a 7" Display with partial Update, greyscale and fast overall update.
+https://www.crowdsupply.com/e-radionica/inkplate-6 for more information
 
 This fork is based on David Bird's excellent e-Paper weather display.  I have added code to receive Temperature & Humidity readings from up to 3x F007TH Thermometer / Hygrometers.
 https://www.amazon.co.uk/dp/B07CQF4712/ref=pe_3187911_185740111_TE_item
